@@ -1,0 +1,40 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('../images/art-bg.jpg') no-repeat center/cover;
+    color: #333;
+}
+header {
+    background: rgba(75, 0, 130, 0.8);
+    padding: 20px;
+    text-align: center;
+}
+h1 {
+    color: #fff;
+}
+nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+}
+nav a:hover {
+    color: #87ceeb;
+}
+main {
+    padding: 20px;
+    text-align: center;
+}
+.theme-img {
+    max-width: 300px;
+    border-radius: 5px;
+}
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

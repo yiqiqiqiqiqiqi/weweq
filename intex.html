@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HAF: Where History, Art, and Fashion intertwine in timeless elegance.">
+    <title>HAF - History, Art & Fashion</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg" style="background-image: url('images/index1.jpg');"></div>
+        <div class="container hero-content">
+            <div class="row justify-content-center text-center">
+                <div class="col-md-10">
+                    <h1 class="display-3 animate-typing animate-gradient" data-lang-key="hero_title">永恒交融</h1>
+                    <p class="lead animate-fade" data-lang-key="hero_subtitle">HAF 将历史、艺术与时尚融为一体，开启一场跨越时空的美学之旅</p>
+                    <a href="#story" class="btn btn-primary btn-large animate-pulse animate-bounce" data-lang-key="hero_button">发现 HAF</a>
+                </div>
+            </div>
+        </div>
+        <div class="particles" aria-hidden="true"></div>
+    </section>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand animate-jitter" href="index.html">HAF</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link animate-jitter" href="history.html" data-lang-key="nav_history">历史</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link animate-jitter" href="art.html" data-lang-key="nav_art">艺术</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link animate-jitter" href="fashion.html" data-lang-key="nav_fashion">时尚</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link animate-jitter" href="php/shop.php" data-lang-key="nav_shop">商店</a>
+                    </li>
+                    <li class="nav-item">
+                        <select id="language-switcher" class="form-select w-auto">
+                            <option value="zh">中文</option>
+                            <option value="en">English</option>
+                            <option value="ms">Bahasa Melayu</option>
+                        </select>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Story Section -->
+    <section id="story" class="story padding-medium">
+        <div class="container">
+            <h2 class="section-title text-center animate-fade animate-gradient" data-lang-key="story_title">我们的故事</h2>
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <img src="images/index2.jpg" class="img-fluid story-img animate-parallax animate-flip" alt="HAF Story" data-lang-key="story_image_alt">
+                </div>
+                <div class="col-md-6">
+                    <p class="lead animate-fade" data-lang-key="story_text_1">HAF 诞生于对美学的热爱。我们相信，历史是根基，艺术是灵魂，时尚是表达。每一件作品、每一场展览、每一款设计，都在诉说跨越千年的故事。</p>
+                    <p class="animate-fade" data-lang-key="story_text_2">从古老文明的遗迹，到现代画廊的色彩，再到T台上的潮流，HAF 将这些元素交织，创造出独特的生活方式。我们邀请你加入这场旅程，探索属于你的永恒之美。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery padding-medium">
+        <div class="container">
+            <h2 class="section-title text-center animate-fade animate-gradient" data-lang-key="gallery_title">灵感画廊</h2>
+            <p class="lead text-center mb-5 animate-fade" data-lang-key="gallery_subtitle">捕捉美学瞬间，感受 HAF 的创意脉动</p>
+            <div class="row row-cols-1 row-cols-md-4 g-4">
+                <div class="col">
+                    <div class="gallery-item animate-slide-left">
+                        <img src="images/index3.jpg" class="img-fluid" alt="Inspiration 1" data-lang-key="gallery_image_1_alt">
+                        <div class="gallery-overlay">
+                            <p data-lang-key="gallery_image_1_text">灵感瞬间</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="gallery-item animate-slide-right">
+                        <img src="images/index4.jpg" class="img-fluid" alt="Inspiration 2" data-lang-key="gallery_image_2_alt">
+                        <div class="gallery-overlay">
+                            <p data-lang-key="gallery_image_2_text">创意之光</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="gallery-item animate-slide-left">
+                        <img src="images/index5.jpg" class="img-fluid" alt="Inspiration 3" data-lang-key="gallery_image_3_alt">
+                        <div class="gallery-overlay">
+                            <p data-lang-key="gallery_image_3_text">永恒之美</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="gallery-item animate-slide-right">
+                        <img src="images/index6.jpg" class="img-fluid" alt="Inspiration 4" data-lang-key="gallery_image_4_alt">
+                        <div class="gallery-overlay">
+                            <p data-lang-key="gallery_image_4_text">文化交融</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="gallery-item animate-slide-left">
+                        <img src="images/index7.jpg" class="img-fluid" alt="Inspiration 5" data-lang-key="gallery_image_5_alt">
+                        <div class="gallery-overlay">
+                            <p data-lang-key="gallery_image_5_text">时光流转</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="gallery-item animate-slide-right">
+                        <img src="images/index8.jpg" class="img-fluid" alt="Inspiration 6" data-lang-key="gallery_image_6_alt">
+                        <div class="gallery-overlay">
+                            <p data-lang-key="gallery_image_6_text">设计之魂</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="gallery-item animate-slide-left">
+                        <img src="images/index9.jpg" class="img-fluid" alt="Inspiration 7" data-lang-key="gallery_image_7_alt">
+                        <div class="gallery-overlay">
+                            <p data-lang-key="gallery_image_7_text">未来展望</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="gallery-item animate-slide-right">
+                        <img src="images/index10.jpg" class="img-fluid" alt="Inspiration 8" data-lang-key="gallery_image_8_alt">
+                        <div class="gallery-overlay">
+                            <p data-lang-key="gallery_image_8_text">个性表达</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="gallery-item animate-slide-left">
+                        <img src="images/index11.jpg" class="img-fluid" alt="Inspiration 9" data-lang-key="gallery_image_9_alt">
+                        <div class="gallery-overlay">
+                            <p data-lang-key="gallery_image_9_text">美学碰撞</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="gallery-item animate-slide-right">
+                        <img src="images/index12.jpg" class="img-fluid" alt="Inspiration 10" data-lang-key="gallery_image_10_alt">
+                        <div class="gallery-overlay">
+                            <p data-lang-key="gallery_image_10_text">时代之声</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="gallery-item animate-slide-left">
+                        <img src="images/index13.jpg" class="img-fluid" alt="Inspiration 11" data-lang-key="gallery_image_11_alt">
+                        <div class="gallery-overlay">
+                            <p data-lang-key="gallery_image_11_text">创意新生</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="gallery-item animate-slide-right">
+                        <img src="images/index14.jpg" class="img-fluid" alt="Inspiration 12" data-lang-key="gallery_image_12_alt">
+                        <div class="gallery-overlay">
+                            <p data-lang-key="gallery_image_12_text">永恒传承</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="gallery-item animate-slide-left">
+                        <img src="images/index15.jpg" class="img-fluid" alt="Inspiration 13" data-lang-key="gallery_image_13_alt">
+                        <div class="gallery-overlay">
+                            <p data-lang-key="gallery_image_13_text">灵感新生</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="gallery-item animate-slide-right">
+                        <img src="images/index16.jpg" class="img-fluid" alt="Inspiration 14" data-lang-key="gallery_image_14_alt">
+                        <div class="gallery-overlay">
+                            <p data-lang-key="gallery_image_14_text">美学传承</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="gallery-item animate-slide-left">
+                        <img src="images/index17.jpg" class="img-fluid" alt="Inspiration 15" data-lang-key="gallery_image_15_alt">
+                        <div class="gallery-overlay">
+                            <p data-lang-key="gallery_image_15_text">创意时代</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="gallery-item animate-slide-right">
+                        <img src="images/index18.jpg" class="img-fluid" alt="Inspiration 16" data-lang-key="gallery_image_16_alt">
+                        <div class="gallery-overlay">
+                            <p data-lang-key="gallery_image_16_text">永恒之光</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Inspiration Stories -->
+    <section class="inspiration padding-medium">
+        <div class="container">
+            <h2 class="section-title text-center animate-fade animate-gradient" data-lang-key="inspiration_title">灵感故事</h2>
+            <p class="lead text-center mb-5 animate-fade" data-lang-key="inspiration_subtitle">从历史到时尚，HAF 的每一刻都在点燃灵感</p>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="inspiration-card animate-flip">
+                        <img src="images/index19.jpg" class="img-fluid" alt="Story 1" data-lang-key="inspiration_image_1_alt">
+                        <div class="card-back">
+                            <h3 data-lang-key="inspiration_title_1">历史的回响</h3>
+                            <p data-lang-key="inspiration_text_1">古老文物诉说千年往事，启发我们珍惜每一段传承。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="inspiration-card animate-flip">
+                        <img src="images/index20.jpg" class="img-fluid" alt="Story 2" data-lang-key="inspiration_image_2_alt">
+                        <div class="card-back">
+                            <h3 data-lang-key="inspiration_title_2">艺术的火花</h3>
+                            <p data-lang-key="inspiration_text_2">一抹色彩，一笔勾勒，艺术赋予生活无限可能。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="inspiration-card animate-flip">
+                        <img src="images/index21.jpg" class="img-fluid" alt="Story 3" data-lang-key="inspiration_image_3_alt">
+                        <div class="card-back">
+                            <h3 data-lang-key="inspiration_title_3">时尚的脉动</h3>
+                            <p data-lang-key="inspiration_text_3">潮流是自信的表达，HAF 让你成为风尚的引领者。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials padding-medium">
+        <div class="container">
+            <h2 class="section-title text-center animate-fade animate-gradient" data-lang-key="testimonials_title">用户心声</h2>
+            <p class="lead text-center mb-5 animate-fade" data-lang-key="testimonials_subtitle">来自全球的 HAF 爱好者分享他们的体验</p>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="testimonial-card animate-zoom animate-rotate">
+                        <img src="images/index22.jpg" class="img-fluid rounded-circle mb-3" alt="User 1" data-lang-key="testimonial_image_1_alt">
+                        <p data-lang-key="testimonial_text_1">"HAF 的设计让我感受到历史的深邃与现代的活力，太棒了！"</p>
+                        <h5 data-lang-key="testimonial_name_1">李明</h5>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial-card animate-zoom animate-rotate">
+                        <img src="images/index23.jpg" class="img-fluid rounded-circle mb-3" alt="User 2" data-lang-key="testimonial_image_2_alt">
+                        <p data-lang-key="testimonial_text_2">"艺术与时尚的完美结合，HAF 让我重新定义了美学！"</p>
+                        <h5 data-lang-key="testimonial_name_2">Sarah Tan</h5>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial-card animate-zoom animate-rotate">
+                        <img src="images/index24.jpg" class="img-fluid rounded-circle mb-3" alt="User 3" data-lang-key="testimonial_image_3_alt">
+                        <p data-lang-key="testimonial_text_3">"每件商品都像一件艺术品，HAF 是我的灵感源泉！"</p>
+                        <h5 data-lang-key="testimonial_name_3">Ahmad Zulkifli</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brand Journey -->
+    <section class="journey padding-medium">
+        <div class="container">
+            <h2 class="section-title text-center animate-fade animate-gradient" data-lang-key="journey_title">品牌历程</h2>
+            <p class="lead text-center mb-5 animate-fade" data-lang-key="journey_subtitle">HAF 的成长故事，记录美学与创意的每一步</p>
+            <div class="timeline">
+                <div class="timeline-item animate-fade">
+                    <img src="images/index25.jpg" class="timeline-img" alt="Milestone 1" data-lang-key="journey_image_1_alt">
+                    <div class="timeline-content">
+                        <h5 data-lang-key="journey_title_1">2018 - 诞生</h5>
+                        <p data-lang-key="journey_text_1">HAF 成立，致力于融合历史、艺术与时尚。</p>
+                    </div>
+                </div>
+                <div class="timeline-item animate-fade">
+                    <img src="images/index26.jpg" class="timeline-img" alt="Milestone 2" data-lang-key="journey_image_2_alt">
+                    <div class="timeline-content">
+                        <h5 data-lang-key="journey_title_2">2020 - 首展</h5>
+                        <p data-lang-key="journey_text_2">首次全球展览，展示跨界设计。</p>
+                    </div>
+                </div>
+                <div class="timeline-item animate-fade">
+                    <img src="images/index27.jpg" class="timeline-img" alt="Milestone 3" data-lang-key="journey_image_3_alt">
+                    <div class="timeline-content">
+                        <h5 data-lang-key="journey_title_3">2023 - 扩展</h5>
+                        <p data-lang-key="journey_text_3">进入亚洲市场，推出新系列。</p>
+                    </div>
+                </div>
+                <div class="timeline-item animate-fade">
+                    <img src="images/index28.jpg" class="timeline-img" alt="Milestone 4" data-lang-key="journey_image_4_alt">
+                    <div class="timeline-content">
+                        <h5 data-lang-key="journey_title_4">2025 - 未来</h5>
+                        <p data-lang-key="journey_text_4">持续创新，定义美学新篇章。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Preview -->
+    <section class="events padding-medium">
+        <div class="container">
+            <h2 class="section-title text-center animate-fade animate-gradient" data-lang-key="events_title">活动预告</h2>
+            <p class="lead text-center mb-5 animate-fade" data-lang-key="events_subtitle">加入 HAF 的未来盛会，感受美学的无限可能</p>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="event-card animate-zoom">
+                        <img src="images/index29.jpg" class="img-fluid" alt="Event 1" data-lang-key="event_image_1_alt">
+                        <div class="card-body">
+                            <h3 data-lang-key="event_title_1">历史回顾展</h3>
+                            <p data-lang-key="event_text_1">探索古代文明与现代设计的对话。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="event-card animate-zoom">
+                        <img src="images/index30.jpg" class="img-fluid" alt="Event 2" data-lang-key="event_image_2_alt">
+                        <div class="card-body">
+                            <h3 data-lang-key="event_title_2">艺术工作坊</h3>
+                            <p data-lang-key="event_text_2">亲手创作，释放你的艺术潜能。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="event-card animate-zoom">
+                        <img src="images/index31.jpg" class="img-fluid" alt="Event 3" data-lang-key="event_image_3_alt">
+                        <div class="card-body">
+                            <h3 data-lang-key="event_title_3">时尚发布会</h3>
+                            <p data-lang-key="event_text_3">见证 HAF 2025 新品首发。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Section -->
+    <section class="community padding-medium">
+        <div class="container text-center">
+            <h2 class="section-title animate-fade animate-gradient" data-lang-key="community_title">加入我们的社区</h2>
+            <p class="lead mb-4 animate-fade" data-lang-key="community_subtitle">分享你的 HAF 故事，与全球美学爱好者连接</p>
+            <img src="images/index32.jpg" class="img-fluid mb-4 animate-zoom" alt="Community" data-lang-key="community_image_alt">
+            <a href="#community" class="btn btn-primary btn-large animate-pulse animate-bounce" data-lang-key="community_button">分享你的故事</a>
+        </div>
+    </section>
+
+    <!-- Themes Preview -->
+    <section class="themes padding-medium">
+        <div class="container">
+            <h2 class="section-title text-center animate-fade animate-gradient" data-lang-key="themes_title">探索三大主题</h2>
+            <p class="lead text-center mb-5 animate-fade" data-lang-key="themes_subtitle">历史、艺术、时尚，HAF 为你打开三扇美学之门</p>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="theme-card animate-flip">
+                        <i class="fas fa-landmark fa-3x mb-3"></i>
+                        <h3 data-lang-key="theme_history_title">历史</h3>
+                        <p data-lang-key="theme_history_text">追溯文明的辉煌，感受时间的深邃与厚重。</p>
+                        <a href="history.html" class="btn btn-primary animate-pulse" data-lang-key="theme_history_button">走进历史</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="theme-card animate-flip">
+                        <i class="fas fa-paint-brush fa-3x mb-3"></i>
+                        <h3 data-lang-key="theme_art_title">艺术</h3>
+                        <p data-lang-key="theme_art_text">沉浸于色彩与创意，探索灵感的无限可能。</p>
+                        <a href="art.html" class="btn btn-primary animate-pulse" data-lang-key="theme_art_button">发现艺术</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="theme-card animate-flip">
+                        <i class="fas fa-tshirt fa-3x mb-3"></i>
+                        <h3 data-lang-key="theme_fashion_title">时尚</h3>
+                        <p data-lang-key="theme_fashion_text">引领潮流的步伐，展现个性与自信的风格。</p>
+                        <a href="fashion.html" class="btn btn-primary animate-pulse" data-lang-key="theme_fashion_button">追逐时尚</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shop CTA -->
+    <section class="shop-cta padding-medium">
+        <div class="container text-center">
+            <h2 class="section-title animate-fade animate-gradient" data-lang-key="cta_title">开启你的美学之旅</h2>
+            <p class="lead mb-4 animate-fade" data-lang-key="cta_subtitle">探索 HAF 的独家商品，找到属于你的历史、艺术与时尚</p>
+            <a href="php/shop.php" class="btn btn-primary btn-large animate-pulse animate-bounce" data-lang-key="cta_button">立即选购</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer padding-small">
+        <div class="container text-center">
+            <p data-lang-key="footer_copyright">© 2025 历史、艺术与时尚. 保留所有权利。</p>
+            <div class="social-links">
+                <a href="#" class="social-icon animate-jitter"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon animate-jitter"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon animate-jitter"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

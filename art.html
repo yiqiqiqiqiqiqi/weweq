@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover the vibrant world of art through our curated gallery and collections.">
+    <title>艺术 - 历史、艺术与时尚</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- Google Fonts: Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero art-hero">
+        <div class="container hero-content">
+            <div class="row justify-content-center text-center">
+                <div class="col-md-10">
+                    <h1 class="display-3">艺术画廊</h1>
+                    <p class="lead">从古典到现代，艺术是灵感的永恒绽放</p>
+                </div>
+            </div>
+        </div>
+        <div class="particles" aria-hidden="true"></div>
+    </section>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">HAF</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="history.html">历史</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="art.html">艺术</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="fashion.html">时尚</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="php/shop.php">商店</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Art Gallery -->
+    <section class="art-gallery padding-medium">
+        <div class="container">
+            <h2 class="section-title text-center">探索艺术世界</h2>
+            <p class="lead text-center mb-5">从印象派的柔光到抽象派的狂野，感受每一种艺术流派的独特魅力。</p>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                <div class="col">
+                    <div class="art-card">
+                        <img src="images/art1.jpg" class="img-fluid" alt="印象派">
+                        <div class="art-overlay">
+                            <h5>印象派</h5>
+                            <p>捕捉光影的瞬间，描绘自然的灵动之美。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="art-card">
+                        <img src="images/art2.jpg" class="img-fluid" alt="抽象艺术">
+                        <div class="art-overlay">
+                            <h5>抽象艺术</h5>
+                            <p>摆脱具象的束缚，释放内心的无限想象。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="art-card">
+                        <img src="images/art3.jpg" class="img-fluid" alt="雕塑">
+                        <div class="art-overlay">
+                            <h5>雕塑</h5>
+                            <p>三维空间的诗篇，诉说形态与力量的故事。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="art-card">
+                        <img src="images/art4.jpg" class="img-fluid" alt="现代主义">
+                        <div class="art-overlay">
+                            <h5>现代主义</h5>
+                            <p>突破传统，探索形式与意义的崭新边界。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="art-card">
+                        <img src="images/art5.jpg" class="img-fluid" alt="街头艺术">
+                        <div class="art-overlay">
+                            <h5>街头艺术</h5>
+                            <p>城市的画布，涂鸦与文化的碰撞火花。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <a href="php/shop.php?category=art" class="btn btn-primary btn-large">浏览艺术商品</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer padding-small">
+        <div class="container text-center">
+            <p>© 2025 历史、艺术与时尚. 保留所有权利。</p>
+            <div class="social-links">
+                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <!-- Custom JS -->
+    <script src="js/scripts.js"></script>
+</body>
+</html>
